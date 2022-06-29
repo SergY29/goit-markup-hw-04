@@ -135,6 +135,11 @@ color: var(--accent-color);
 }
 /* Header contact */
 
+/* .contact{
+    display: inline-flex;
+    align-items: center;
+} */
+
 .header-contact{
     display: flex;
     margin-left: auto;
@@ -453,4 +458,18 @@ color: var(--accent-color);
 }
 .footer-contact:hover{
     color: var(--accent-color);
+}
+
+/* Icon svg */
+
+.icon-telephone{
+    width: 16px;
+    height: 12px;
+
+}
+
+.icon-smartphone{
+    width: 10px;
+    height: 16px;
+
 }
