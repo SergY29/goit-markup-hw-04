@@ -7,6 +7,7 @@
     --title-text-color: #757575;
     --alternative-text-color: rgba(255, 255, 255, 0.6);
     --accent-color: #2196F3;
+    --icon-socials: #AFB1B8;
     --button-hero-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
     --button-portfolio-shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     --button-portfolio-shadow-active: 0px 3px 1px rgba(0, 0, 0, 0.1),
@@ -161,7 +162,7 @@ color: var(--accent-color);
 
     font-weight: 500;
     font-size: 14px;
-    line-height:1.1;
+    /* line-height:1.1; */
     letter-spacing: 0.02em;
     text-decoration: none;
         color: var(--title-text-color);
@@ -291,10 +292,13 @@ color: var(--accent-color);
 
 .feachers {
     display: flex;
+    
 }
 
 .feachers .item{
+    
     width: 270px;
+
 }
 
 .feachers .item + .item{
@@ -308,7 +312,7 @@ color: var(--accent-color);
 
 
 .feachers-title{
-    margin-top: 0;
+    margin-top: 30px;
     margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
@@ -343,6 +347,23 @@ color: var(--accent-color);
     letter-spacing: 0.03em;
 }
 
+/* Our clients */
+
+.clients.list{
+    display: flex;
+}
+
+.clients .client-desk + .client-desk{
+    margin-left: 30px;
+}
+
+.client-desk{
+    display: flex;
+    /* flex-wrap: nowrap;
+    gap: 30px;
+    flex-basis: calc((100% -150px) / 6); */
+    /* width: 170px; */
+}
 
 /* main portfolio */
 .portfolio.list {
@@ -386,7 +407,6 @@ color: var(--accent-color);
     line-height: 2;
     letter-spacing: 0.06em;
 }
-
 
 
 /* Our team */
@@ -476,12 +496,40 @@ color: var(--accent-color);
 .icon-smartphone{
     fill: currentColor;
     margin-right: 10px;
-    
 }
 
-.feachers > .item::before{
-    display: inline-block;
-    content: '';
+/* svg-feachers */
+.svg-feachers{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--acccent-background-color);
     height: 120px;
+}
+
+/* svg-client */
+/* .icon-client{
+    fill: var(--icon-socials);
+} */
+
+.client-web{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: var(--icon-socials);
+    
+    width: 170px;
+    height: 92px;
+        
+    border: 1px solid var(--icon-socials);
+    border-radius: 4px;
+}
+
+.client-web:hover,
+.client-web:focus {
+    fill: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    border-radius: 4px;
 }
 
