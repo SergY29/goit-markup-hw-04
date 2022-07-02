@@ -435,7 +435,8 @@ body {
   height: 100%;
 }
 
-.item .icon-team:hover{
+.item .icon-team:hover,
+.item .icon-team:focus{
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -482,7 +483,8 @@ body {
   line-height: 1.7;
   letter-spacing: 0.03em;
 }
-.footer-contact:hover {
+.footer-contact:hover,
+.footer-contact:focus {
   color: var(--accent-color);
 }
 
@@ -521,10 +523,6 @@ body {
   background-color: var(--icon-footer) ;
 }
 
-.item.twitter{
-    background-color: var(--accent-color);
-}
-
 .icon-footer{
     display: flex;
         align-items: center;
@@ -533,6 +531,15 @@ body {
         width: 100%;
         height: 100%;
 }
+
+.item .icon-footer:hover,
+.item .icon-footer:focus {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+}
+
 
 /* Icon svg */
 
